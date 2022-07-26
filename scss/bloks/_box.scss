@@ -1,0 +1,119 @@
+.box-section{
+    padding: 76px 0;
+    background-color: #F67E7E;
+}
+.box{
+    @include center(space-around);
+}
+.box__title{
+    font-weight: 700;
+    line-height: 48px;
+    font-size: 48px;
+    color: #012F34;
+}
+.box__link{
+    display: inline-block;
+    width: 153px;
+    border-radius: 24px;
+    border: 2px solid #012F34;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 18px;
+    color: #012F34;
+    transition: all 0.3s;
+}
+.box__link:hover{
+    background-color: #012F34;
+    color: #fff;
+}
+@media only screen and (max-width:1000px){
+    .box-section{
+        padding: 84px 0;
+    }
+    .box__title{
+        font-weight: 700;
+        line-height: 38px;
+        font-size: 38px;
+    }
+    .box__link{
+        font-weight: 600;
+        line-height: 28px;
+        font-size: 18px;
+    }
+}
+
+@media (min-height:731px) and (max-width:768px){
+    .box-section{
+        padding: 84px 0;
+    }
+    .box__title{
+        font-weight: 700;
+        line-height: 32px;
+        font-size: 32px;
+    }
+    .box__link{
+        font-weight: 600;
+        line-height: 28px;
+        font-size: 18px;
+    }
+}
+
+@media (min-height:482px) and (max-width:730px){
+    .box-section{
+        padding: 83px 0;
+    }
+    .box{
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box__title{
+        width: 100%;
+        font-weight: 700;
+        line-height: 32px;
+        font-size: 32px;
+    }
+    .box__link{
+        width: 100%;
+        margin-top: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        font-size: 18px;
+    }
+}
+
+@media (min-height:320px) and (max-width:481px){
+    .box-section{
+        padding: 83px 0;
+    }
+    .box{
+        width: 70%;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box__title{
+        width: 100%;
+        font-weight: 700;
+        line-height: 32px;
+        font-size: 32px;
+    }
+    .box__link{
+        width: 30;
+        margin-top: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+// Call Us : 949-833-7432

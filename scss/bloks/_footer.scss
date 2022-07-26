@@ -1,0 +1,106 @@
+.site-footer{
+    padding: 48px 0;
+    background-color: #002529;
+}
+.footer{
+    @include center(space-between);
+    align-items: flex-end;
+}
+.footer__blok-link{
+    display: inline-block;
+}
+.footer__blok-list{
+    margin-top: 25px;
+    @include center(none);
+}
+.footer__blok-item + .footer__blok-item{
+    margin-left: 40px;
+}
+.footer__blok-item > a{
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+.footer__blok-item > a:hover{
+    color: #F67E7E;
+}
+.footer__left{
+    @include center(none);
+    align-items: flex-start;
+}
+.footer__right-blok{
+    margin-left: 126px;
+}
+.footer__right-blok-item{
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 15px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.footer__right-top-list{
+    margin-bottom: 51px;
+    @include center(none);
+    justify-content: flex-end;
+}
+.footer__right-top-item + .footer__right-top-item{
+    margin-left: 16px;
+}
+.footer__right-top-text{
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: right;
+    opacity: 0.6;
+}
+#facebook{
+    transition: all 0.3s;
+}
+#facebook:hover{
+    fill: #5fa4ff;
+}
+#Path{
+    transition: all 0.3s;
+}
+#Path:hover{
+    fill: rgb(240, 40, 40);
+    background-color: #FFFFFF;
+}
+#twitter{
+    transition: all 0.3s;
+}
+#twitter:hover{
+    fill: rgba(48, 94, 245, 0.888);
+}
+
+
+
+
+
+
+@media (min-height:550px) and (max-width:790px){
+    .site-footer{
+        padding: 56px 0;
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer__left{
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .footer__right{
+        display: none;
+    }
+}
+
+@media (min-height:320px) and (max-width:549px){
+    .site-footer{
+        width: 100%;
+    }
+}
