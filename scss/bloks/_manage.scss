@@ -1,6 +1,19 @@
 .manage-section{
     padding: 140px 0;
     background-color: #012F34;
+    position: relative;
+}
+.manag::after{
+    position: absolute;
+    content: ' ';
+    width: 200px;
+    height: 244px;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../img/manage_bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 100px;
 }
 .manage__line{
     display: inline-block;
@@ -95,6 +108,10 @@
     .manage-section{
         width: 100%;
     }
+    .manag::after{
+        top: 0;
+        right: 0;
+    }
     .manag{
         width: 90%;
         margin: 0 auto;
@@ -103,7 +120,7 @@
         flex-direction: column;
     }
     .manage__content{
-        width: 90%;
+        width: 70%;
     }
     .manage__list{
         margin-top: 80px;
@@ -139,7 +156,7 @@
         margin: auto;
     }
     .manage__content{
-        width: 100%;
+        width: 80%;
     }
     .manage__list{
         width: 100%;

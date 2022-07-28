@@ -28,6 +28,10 @@
     display: flex;
     gap: 40px;
 }
+
+.footer__p-wrapper a:nth-child(2){
+    margin-left: 30px;
+}
    
 .link {
     display: inline-block;
@@ -107,6 +111,12 @@
 #twitter:hover{
     fill: rgba(48, 94, 245, 0.888);
 }
+
+@media only screen and (max-width){
+    .footer__p-wrapper a:nth-child(2){
+        margin-left: 20px;
+    }
+}
    
    @media only screen and (max-width: 768px) {
     .footer {
@@ -124,7 +134,11 @@
     }
    
     .footer__p-wrapper {
+        gap: 20px;
      justify-content: space-between;
+    }
+    .footer__p-wrapper a:nth-child(2){
+        margin-left: 20px;
     }
    
     .footer-logo {
@@ -171,6 +185,9 @@
    
     .footer__p-wrapper {
      justify-content: space-between;
+    }
+    .footer__p-wrapper a:nth-child(2){
+        margin-left: 10px;
     }
    
     .footer__logo {

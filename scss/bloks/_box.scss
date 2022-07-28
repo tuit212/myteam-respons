@@ -1,9 +1,22 @@
 .box-section{
     padding: 76px 0;
     background-color: #F67E7E;
+    position: relative;
 }
 .box{
     @include center(space-around);
+}
+.box::before{
+    position: absolute;
+    content: ' ';
+    width: 200px;
+    height: 244px;
+    background-size: 100%;
+    background-image: url("../../img/box__bg.svg");
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    background-position-y: 120px;
 }
 .box__title{
     font-weight: 700;
@@ -78,7 +91,7 @@
         font-size: 32px;
     }
     .box__link{
-        width: 100%;
+        width: 40%;
         margin-top: 24px;
         font-weight: 600;
         line-height: 28px;
@@ -105,15 +118,9 @@
         font-size: 32px;
     }
     .box__link{
-        width: 30;
         margin-top: 24px;
         font-weight: 600;
         line-height: 28px;
         font-size: 18px;
     }
 }
-
-
-
-
-// Call Us : 949-833-7432

@@ -1,6 +1,29 @@
 .card-section{
     padding: 140px 0 152px 0;
+    position: relative;
 
+}
+.card::before{
+    position: absolute;
+    content: ' ';
+    width: 147px;
+    height: 100px;
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/card__bg.svg");
+}
+.card::after{
+    position: absolute;
+    content: ' ';
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-image: url("../../img/card__bg1.svg");
+    bottom: 0;
+    right: 0;
+    background-position-y: 100px;
+    background-repeat: no-repeat;
 }
 .card__top{
     width: 85%;
