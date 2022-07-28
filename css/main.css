@@ -1189,7 +1189,7 @@ template {
     font-size: 32px;
   }
   .box__link {
-    width: 40%;
+    width: 60%;
     margin-top: 24px;
     font-weight: 600;
     line-height: 28px;
@@ -1215,6 +1215,7 @@ template {
     font-size: 32px;
   }
   .box__link {
+    width: 60%;
     margin-top: 24px;
     font-weight: 600;
     line-height: 28px;
