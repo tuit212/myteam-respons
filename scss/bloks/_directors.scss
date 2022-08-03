@@ -48,6 +48,30 @@
     @include center (center);
     flex-direction: column;
     transition: all 0.5s;
+    position: relative;
+}
+.directors__item-box{
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    background-color: #F67E7E;
+    border-radius: 50%;
+    bottom: -28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.directors__item-box:hover{
+    background-color: #79C8C7;
+    transition: all 0.4s;
+}
+.directors__item-box img{
+
+    transition: all 0.4s;
+}
+.directors__item-box:hover img{
+    transform: rotate(45deg);
 }
 .directors__item:hover{
     background-color: transparent;
